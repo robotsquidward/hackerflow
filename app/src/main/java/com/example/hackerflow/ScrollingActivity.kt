@@ -24,6 +24,7 @@ class ScrollingActivity : AppCompatActivity() {
             TopStoriesViewModel(repo = HackerNewsRepository(HackerNewsRetrofit.retrofitInstance))
         }
     }
+
     private val adapter = TopStoriesRecyclerViewAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {

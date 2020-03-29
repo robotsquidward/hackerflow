@@ -2,6 +2,7 @@ package com.example.hackerflow.topstories
 
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.GONE
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hackerflow.R
@@ -28,6 +29,9 @@ class TopStoriesRecyclerViewAdapter: RecyclerView.Adapter<TopStoryViewHolder>() 
 
     override fun onBindViewHolder(holder: TopStoryViewHolder, position: Int) {
         holder.view.storyNameTextView.text = stories[position].title
+        holder.view.storyTextSnippet.text = stories[position].text
+        // todo -> remove when we have a way to display snippet preview
+        holder.view.storyTextSnippet.visibility = GONE
     }
 
 }

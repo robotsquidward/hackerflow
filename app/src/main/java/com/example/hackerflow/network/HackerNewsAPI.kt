@@ -27,19 +27,19 @@ interface HackerNewsAPI {
  * https://github.com/HackerNews/API
  */
 data class HNItem(
-    val id: Int?,
-    val deleted: Boolean? = false,
-    val type: String? = null,
-    val by: String? = null,
-    val time: Int? = null,
-    val text: String? = null,
-    val dead: Boolean? = false,
-    val parent: Int? = null,
-    val poll: Int? = null,
-    val kids: MutableList<Int>? = null,
-    val url: String? = null,
-    val score: Int? = null,
-    val title: String? = null,
-    val parts: MutableList<Int>? = null,
-    val descendants: Int? = null
+    var id: Int?,
+    var deleted: Boolean? = false,
+    var type: String? = null,
+    var by: String? = null,
+    var time: Int? = null,
+    var text: String? = null,
+    var dead: Boolean? = false,
+    var parent: Int? = null,
+    var poll: Int? = null,
+    var kids: MutableList<Int>? = null,
+    var url: String? = null,
+    var score: Int? = null,
+    var title: String? = null,
+    var parts: MutableList<Int>? = null,
+    var descendants: Int? = null
 )
